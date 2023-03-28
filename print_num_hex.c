@@ -6,6 +6,7 @@
  * @ibuf: index for buffer pointer
  * Return: number of chars printed
  * print_num_hex.c
+ *
  */
 int prinnhex(va_list arguments, char *buf, unsigned int ibuf)
 {
