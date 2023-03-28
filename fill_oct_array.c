@@ -6,6 +6,7 @@
  * @oct: array where is stored the octal.
  *
  * Return: binary array.
+ * fill_oct_array.
  */
 char *fill_oct_array(char *bnr, char *oct)
 {
