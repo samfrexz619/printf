@@ -12,6 +12,7 @@
  *
  * Description: struct that stores pointers to a
  * printer functions.
+ * main.h
  */
 typedef struct print
 {
