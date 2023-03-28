@@ -4,6 +4,7 @@
  * @s: argument indentifier
  * @index: index for argument indentifier
  * Return: pointer to a function.
+ * get_print_func.
  */
 int (*get_print_func(const char *s, int index))(va_list, char *, unsigned int)
 {
