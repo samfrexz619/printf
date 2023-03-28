@@ -11,28 +11,28 @@
  */
 char *fill_binary_array(char *binary, long int int_in, int isneg, int limit)
 {
-	int index;
+	int i;
 
-	for (index = 0; index < limit; index++)
-		binary[index] = '0';
+	for (i = 0; i < limit; i++)
+		binary[i] = '0';
 	binary[limit] = '\0';
-	for (index = limit - 1; int_in > 1; index--)
+	for (i = limit - 1; int_in > 1; i--)
 	{
 		if (int_in == 2)
-			binary[index] = '0';
+			binary[i] = '0';
 		else
-			binary[index] = (int_in % 2) + '0';
+			binary[i] = (int_in % 2) + '0';
 		int_in /= 2;
 	}
 	if (int_in != 0)
-		binary[index] = '1';
+		binary[i] = '1';
 	if (isneg)
 	{
-		for (index = 0; binary[index]; index++)
-			if (binary[index] == '0')
-				binary[index] = '1';
+		for (i = 0; binary[i]; i++)
+			if (binary[i] == '0')
+				binary[i] = '1';
 			else
-				binary[index] = '0';
+				binary[i] = '0';
 	}
 	return (binary);
 }
